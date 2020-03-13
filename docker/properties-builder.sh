@@ -155,4 +155,11 @@ Note: passwords & apiKey hidden
 `cat $PROP_FILE |egrep -vi 'password|apiKey'`
 "
 
+Connection.Response resp = Jsoup.connect(url) //
+                .timeout(60000) //
+                .method(Connection.Method.GET) //
+                .execute();
+
+
+
 exit 0
